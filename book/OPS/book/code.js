@@ -59,7 +59,8 @@ function resolve()
 
 function extract(name)
 {
-	name = name.toLowerCase();
+	//Now the part of filename can be upper case and lower case will not work
+	//name = name.toLowerCase();
 	var basePath = '/' + name + '/';
 	var errored = false;
 	var finalDeferred = VST.$.Deferred();
